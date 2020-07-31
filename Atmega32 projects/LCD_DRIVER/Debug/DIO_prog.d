@@ -1,0 +1,14 @@
+DIO_prog.o DIO_prog.o: ../DIO_prog.c ../STD_TYPES.h ../BIT_MATH.h \
+  ../DIO_register.h ../DIO_config.h ../DIO_priv.h ../DIO_int.h
+
+../STD_TYPES.h:
+
+../BIT_MATH.h:
+
+../DIO_register.h:
+
+../DIO_config.h:
+
+../DIO_priv.h:
+
+../DIO_int.h:
