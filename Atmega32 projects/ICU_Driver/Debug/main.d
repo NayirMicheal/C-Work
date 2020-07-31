@@ -1,0 +1,23 @@
+main.o main.o: ../main.c ../STD_TYPES.h ../BIT_MATH.h ../DIO_register.h \
+  ../DIO_int.h ../TIM_int.h ../TIM_config.h ../TIM1_int.h \
+  ../TIM1_config.h ../GIE_int.h ../LCD_int.h
+
+../STD_TYPES.h:
+
+../BIT_MATH.h:
+
+../DIO_register.h:
+
+../DIO_int.h:
+
+../TIM_int.h:
+
+../TIM_config.h:
+
+../TIM1_int.h:
+
+../TIM1_config.h:
+
+../GIE_int.h:
+
+../LCD_int.h:
