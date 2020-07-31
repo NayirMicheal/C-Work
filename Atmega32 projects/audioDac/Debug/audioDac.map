@@ -1,0 +1,418 @@
+Archive member included because of file (symbol)
+
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./TIM_prog.o (__do_clear_bss)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD ./DIO_prog.o
+LOAD ./GIE_prog.o
+LOAD ./TIM_prog.o
+LOAD ./main.o
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x4198
+ *(.vectors)
+ .vectors       0x00000000       0x54 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+ .progmem.data  0x00000054     0x3b23 ./main.o
+                0x00000054                nigry_raw
+                0x00003b78                . = ALIGN (0x2)
+ *fill*         0x00003b77        0x1 00
+                0x00003b78                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00003b78        0x0 linker stubs
+ *(.trampolines*)
+                0x00003b78                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00003b78                __ctors_start = .
+ *(.ctors)
+                0x00003b78                __ctors_end = .
+                0x00003b78                __dtors_start = .
+ *(.dtors)
+                0x00003b78                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00003b78        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00003b78                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00003b78        0xc c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00003b84       0x10 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00003b84                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00003b94        0x8 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x00003b9c        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00003b9c                __vector_1
+                0x00003b9c                __vector_12
+                0x00003b9c                __bad_interrupt
+                0x00003b9c                __vector_6
+                0x00003b9c                __vector_3
+                0x00003b9c                __vector_13
+                0x00003b9c                __vector_17
+                0x00003b9c                __vector_19
+                0x00003b9c                __vector_7
+                0x00003b9c                __vector_5
+                0x00003b9c                __vector_4
+                0x00003b9c                __vector_9
+                0x00003b9c                __vector_2
+                0x00003b9c                __vector_15
+                0x00003b9c                __vector_8
+                0x00003b9c                __vector_14
+                0x00003b9c                __vector_16
+                0x00003b9c                __vector_18
+                0x00003b9c                __vector_20
+ .text          0x00003ba0        0x0 ./DIO_prog.o
+ .text          0x00003ba0        0x0 ./GIE_prog.o
+ .text          0x00003ba0        0x0 ./TIM_prog.o
+ .text          0x00003ba0        0x0 ./main.o
+ .text          0x00003ba0        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00003ba0        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00003ba0                . = ALIGN (0x2)
+ *(.text.*)
+ .text.DIO_voidInitialize
+                0x00003ba0       0x2c ./DIO_prog.o
+                0x00003ba0                DIO_voidInitialize
+ .text.DIO_voidSetPinValue
+                0x00003bcc      0x1b2 ./DIO_prog.o
+                0x00003bcc                DIO_voidSetPinValue
+ .text.DIO_u8GetPinValue
+                0x00003d7e      0x160 ./DIO_prog.o
+                0x00003d7e                DIO_u8GetPinValue
+ .text.GIE_EnableGlobalInterrupt
+                0x00003ede       0x1c ./GIE_prog.o
+                0x00003ede                GIE_EnableGlobalInterrupt
+ .text.GIE_DisableGlobalInterrupt
+                0x00003efa       0x1c ./GIE_prog.o
+                0x00003efa                GIE_DisableGlobalInterrupt
+ .text.TIM_voidInitialize
+                0x00003f16       0x6a ./TIM_prog.o
+                0x00003f16                TIM_voidInitialize
+ .text.TIM_voidEnableInt
+                0x00003f80       0x1c ./TIM_prog.o
+                0x00003f80                TIM_voidEnableInt
+ .text.TIM_voidDisableInt
+                0x00003f9c       0x1c ./TIM_prog.o
+                0x00003f9c                TIM_voidDisableInt
+ .text.TIM_voidEnableIntCTC
+                0x00003fb8       0x1c ./TIM_prog.o
+                0x00003fb8                TIM_voidEnableIntCTC
+ .text.TIM_voidDisableIntCTC
+                0x00003fd4       0x1c ./TIM_prog.o
+                0x00003fd4                TIM_voidDisableIntCTC
+ .text.TIM_voidSetCallBack
+                0x00003ff0       0x24 ./TIM_prog.o
+                0x00003ff0                TIM_voidSetCallBack
+ .text.TIM_voidSetCallBackCTC
+                0x00004014       0x24 ./TIM_prog.o
+                0x00004014                TIM_voidSetCallBackCTC
+ .text.TIM_voidInitCountingRegister
+                0x00004038       0x1c ./TIM_prog.o
+                0x00004038                TIM_voidInitCountingRegister
+ .text.TIM_voidInitCTCRegister
+                0x00004054       0x1c ./TIM_prog.o
+                0x00004054                TIM_voidInitCTCRegister
+ .text.__vector_11
+                0x00004070       0x5a ./TIM_prog.o
+                0x00004070                __vector_11
+ .text.__vector_10
+                0x000040ca       0x5a ./TIM_prog.o
+                0x000040ca                __vector_10
+ .text.DAC_Song
+                0x00004124       0x4e ./main.o
+                0x00004124                DAC_Song
+ .text.main     0x00004172       0x22 ./main.o
+                0x00004172                main
+ .text.libgcc   0x00004194        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00004194        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00004194                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00004194        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00004194                exit
+                0x00004194                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00004194        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00004198                _etext = .
+
+.data           0x00800060        0x0 load address 0x00004198
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ./DIO_prog.o
+ .data          0x00800060        0x0 ./GIE_prog.o
+ .data          0x00800060        0x0 ./TIM_prog.o
+ .data          0x00800060        0x0 ./main.o
+ .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800060                . = ALIGN (0x2)
+                0x00800060                _edata = .
+                0x00800060                PROVIDE (__data_end, .)
+
+.bss            0x00800060        0x6
+                0x00800060                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x00800060        0x0 ./DIO_prog.o
+ .bss           0x00800060        0x0 ./GIE_prog.o
+ .bss           0x00800060        0x0 ./TIM_prog.o
+ .bss           0x00800060        0x0 ./main.o
+ .bss           0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ .bss.TIM_CallBack
+                0x00800060        0x2 ./TIM_prog.o
+ .bss.TIM_CallBack_CTC
+                0x00800062        0x2 ./TIM_prog.o
+ .bss.i         0x00800064        0x2 ./main.o
+                0x00800064                i
+ *(COMMON)
+                0x00800066                PROVIDE (__bss_end, .)
+                0x00004198                __data_load_start = LOADADDR (.data)
+                0x00004198                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800066        0x0
+                0x00800066                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800066                PROVIDE (__noinit_end, .)
+                0x00800066                _end = .
+                0x00800066                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000      0xa74
+ *(.stab)
+ .stab          0x00000000      0x408 ./DIO_prog.o
+ .stab          0x00000408      0x144 ./GIE_prog.o
+                                0x1bc (size before relaxing)
+ .stab          0x0000054c      0x384 ./TIM_prog.o
+                                0x3fc (size before relaxing)
+ .stab          0x000008d0      0x1a4 ./main.o
+                                0x21c (size before relaxing)
+
+.stabstr        0x00000000      0x5e5
+ *(.stabstr)
+ .stabstr       0x00000000      0x5e5 ./DIO_prog.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(audioDac.elf elf32-avr)
+LOAD linker stubs
